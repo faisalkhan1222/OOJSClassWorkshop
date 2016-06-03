@@ -8,9 +8,10 @@ if( pass !== '12345678'){
 
 userName = document.getElementById("name").value;
 
-if(hasNumber(userName)){
+if(hasNumber(userName) && pass === '12345678'){
 
-  alert("has number");
+document.getElementById("myForm").innerHTML = "<h1> The userName and Password are good </h1>"
+
 }
 
 return false;
